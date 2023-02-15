@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --clr-primary: #9381FF;
+    --clr-secondary: #B8B8FF;
+    --clr-body: #F8F7FF;
+    --clr-project-primary: #FFEEDD;
+    --clr-button-primary: #FFD8BE;
+}
