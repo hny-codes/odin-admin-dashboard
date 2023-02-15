@@ -184,37 +184,86 @@ body {
 
 /* Project container */
 .project-container {
-    display: grid;
-    grid: 0.5fr 3fr / 1fr;
+  display: grid;
+  grid: 0.5fr 3fr / 1fr;
 }
 
 .project-container h2 {
-    text-align: center;
-    font-size: 2rem;
-    font-family: var(--font-family-bold);
-    margin-top: 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+  font-family: var(--font-family-bold);
+  margin-top: 1.5rem;
 }
 
 .projects {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
 }
 
 .project {
-    box-shadow: var(--box-shadow-primary);
-    border-radius: 25px;
-    padding: 1.5rem;
-    border-left: 10px solid var(--clr-project-primary);
-    border-right: 10px solid var(--clr-project-primary);
+  box-shadow: var(--box-shadow-primary);
+  border-radius: 25px;
+  padding: 1.5rem;
+  border-left: 10px solid var(--clr-project-primary);
+  border-right: 10px solid var(--clr-project-primary);
 }
 
 .project h3 {
-    margin-bottom: 1.5rem;
-    font-family: var(--font-family-semibold);
+  margin-bottom: 1.5rem;
+  font-family: var(--font-family-semibold);
 }
 
 .project p {
-    font-family: var(--font-family-regular);
-    font-size: 0.9rem;
+  font-family: var(--font-family-regular);
+  font-size: 0.9rem;
+}
+
+/* Profile */
+.profile {
+  display: grid;
+  grid: 2fr 4fr 1fr / 1fr;
+  background-color: var(--clr-secondary);
+  padding: 1rem;
+}
+
+.picture-container {
+  display: grid;
+  grid: 0.5fr 3fr / 1fr;
+}
+
+.picture-container h2 {
+  font-family: var(--font-family-bold);
+  color: #000;
+}
+
+.picture {
+  clip-path: circle(5rem);
+  background-color: #f8f7ff;
+  background-image: url(images/persona.jpg);
+  background-size: cover;
+}
+
+.announcement-container h3 {
+  text-align: center;
+  font-family: var(--font-family-semibold);
+  margin-bottom: 2rem;
+}
+
+.announcements {
+  display: grid;
+  grid: repeat(auto-fill, minmax(100px, 1fr)) / 1fr;
+}
+
+.announcement {
+  display: flex;
+  margin: 1rem 0;
+  box-shadow: var(--box-shadow-primary);
+  padding: 1rem;
+}
+
+.announcement h4 {
+  margin-bottom: 1rem;
+  padding-top: 0.3rem;
 }
