@@ -1,12 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="logo">
+          <h1>Dashboard</h1>
+        </div>
+        <div class="main-nav-container">
+          <ul class="main-nav-list">
+            <li>
+              <a href="#"
+                ><div class="nav-element home">
+                  <img
+                    src="images/nav/home.svg"
+                    alt="home icon"
+                    height="64px"
+                  />
+                  <p>Home</p>
+                </div></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><div class="nav-element message">
+                  <img
+                    src="images/nav/message.svg"
+                    alt="message icon"
+                    height="64px"
+                  />
+                  <p>Messages</p>
+                </div></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><div class="nav-element History">
+                  <img
+                    src="images/nav/history.svg"
+                    alt="history icon"
+                    height="64px"
+                  />
+                  <p>History</p>
+                </div></a
+              >
+            </li>
+            <li>
+              <a href="#">
+                <div class="nav-element Explore">
+                  <img
+                    src="images/nav/explore.svg"
+                    alt="explore icon"
+                    height="64px"
+                  />
+                  <p>Explore</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="sub-nav-container">
+          <ul class="sub-nav-list">
+            <li>
+              <a href="#">
+                <div class="nav-element setting">
+                  <img
+                    src="images/nav/settings.svg"
+                    alt="setting icon"
+                    height="64px"
+                  />
+                  <p>Explore</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="nav-element logout">
+                  <img
+                    src="images/nav/logout.svg"
+                    alt="logout icon"
+                    height="64px"
+                  />
+                  <p>Explore</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <div class="main-container">
+        <div class="overview-container"></div>
+        <div class="utility-container"></div>
+        <div class="project-container"></div>
+      </div>
+      <div class="profile">
+        <div class="picture-container"></div>
+        <div class="announcement-container"></div>
+      </div>
+    </div>
+  </body>
 </html>
