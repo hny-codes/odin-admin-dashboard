@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "NEXT ART Bold";
+  src: url(fonts/NEXT\ ART_Bold.otf);
+}
+
+@font-face {
+  font-family: "NEXT ART Regular";
+  src: url(fonts/NEXT\ ART_Regular.otf);
+}
+
+@font-face {
+    font-family: "NEXT ART Semibold";
+    src: url(fonts/NEXT\ ART_SemiBold.otf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +25,9 @@
   --clr-body: #f8f7ff;
   --clr-project-primary: #ffeedd;
   --clr-button-primary: #ffd8be;
+  --font-family-regular: "Next ART Regular", sans-serif;
+  --font-family-bold: "Next ART Bold", sans-serif;
+  --font-family-semibold: "Next ART Semibold", sans-serif;
 }
 
 li {
@@ -39,7 +57,13 @@ body {
   grid: 1fr 4fr 4fr / 1fr;
   gap: 2rem;
   padding: 1rem 2rem;
+  font-family: var(--font-family-semibold);
 }
+
+.logo h1 {
+    font-family: var(--font-family-bold);
+}
+
 
 .nav-element {
   display: flex;
