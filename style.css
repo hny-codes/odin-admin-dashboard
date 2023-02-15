@@ -1,3 +1,5 @@
+/* Global */
+
 @font-face {
   font-family: "NEXT ART Bold";
   src: url(fonts/NEXT\ ART_Bold.otf);
@@ -9,8 +11,8 @@
 }
 
 @font-face {
-    font-family: "NEXT ART Semibold";
-    src: url(fonts/NEXT\ ART_SemiBold.otf);
+  font-family: "NEXT ART Semibold";
+  src: url(fonts/NEXT\ ART_SemiBold.otf);
 }
 
 * {
@@ -60,10 +62,13 @@ body {
   font-family: var(--font-family-semibold);
 }
 
+/* Logo */
+
 .logo h1 {
-    font-family: var(--font-family-bold);
+  font-family: var(--font-family-bold);
 }
 
+/* Main nav buttons */
 
 .nav-element {
   display: flex;
@@ -75,6 +80,8 @@ body {
   filter: invert(91%) sepia(75%) saturate(2%) hue-rotate(289deg)
     brightness(109%) contrast(101%);
 }
+
+/* Secondary nav buttons */
 
 .main-nav-list li,
 .sub-nav-list li {
@@ -88,4 +95,47 @@ body {
 
 .sub-nav-container {
   align-self: end;
+}
+
+/* Project */
+
+.main-container {
+  display: grid;
+  grid: 0.5fr 0.5fr 3fr / 1fr;
+  padding: 1rem 2rem;
+}
+
+/* Overview container */
+
+.overview-container {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.overview-container h2 {
+  font-family: var(--font-family-bold);
+  font-size: 2rem;
+  align-self: center;
+}
+
+.overview-container input[type="text"] {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  appearance: none;
+  border-radius: 20px;
+  border: none;
+  padding: 0.7rem 1.7rem;
+}
+
+.overview-container input[type="text"] + span {
+  position: relative;
+}
+
+.overview-container input[type="text"] + span::after {
+  position: absolute;
+  content: "⌕";
+  font-size: 1.75rem;
+  left: -190px;
+  transform: rotate(-65deg);
 }
