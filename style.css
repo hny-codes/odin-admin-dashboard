@@ -34,6 +34,7 @@
     brightness(109%) contrast(101%);
   --box-shadow-primary: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  --nav-transition: all 0.2s ease-in;
 }
 
 li {
@@ -51,6 +52,7 @@ body {
 .container {
   display: grid;
   grid: 1fr / 1fr 3fr 1fr;
+  height: 100vh;
 }
 
 /* Sidebar */
@@ -62,7 +64,7 @@ body {
   display: grid;
   grid: 1fr 4fr 4fr / 1fr;
   gap: 2rem;
-  padding: 1rem 2rem;
+  padding: 1rem 0;
   font-family: var(--font-family-semibold);
 }
 
@@ -78,10 +80,38 @@ body {
   display: flex;
   align-items: center;
   gap: 0 1rem;
+  padding-left: 2rem;
+  
 }
 
 .nav-element img {
   filter: var(--img-black-to-white);
+}
+
+.nav-element:hover {
+  background-color: var(--clr-body);
+  color: #000;
+}
+
+.nav-element:hover img,
+.nav-element:hover p {
+  transform: translateX(1rem);
+}
+
+.nav-element:hover img {
+  filter: none;
+}
+
+.nav-element:hover,
+.nav-element:hover img,
+.nav-element:hover p {
+  transition: var(--nav-transition);
+}
+
+.nav-element:not(:hover),
+.nav-element:not(:hover) img,
+.nav-element:not(:hover) p {
+  transition: var(--nav-transition);
 }
 
 /* Secondary nav buttons */
