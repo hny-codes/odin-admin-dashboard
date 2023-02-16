@@ -34,7 +34,8 @@
     brightness(109%) contrast(101%);
   --box-shadow-primary: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-  --nav-transition: all 0.2s ease-in;
+  --transition: all 0.2s ease-in;
+  --btn-transition: all 0.1s ease-in;
 }
 
 li {
@@ -72,6 +73,7 @@ body {
 
 .logo h1 {
   font-family: var(--font-family-bold);
+  margin-left: 2rem;
 }
 
 /* Main nav buttons */
@@ -105,13 +107,13 @@ body {
 .nav-element:hover,
 .nav-element:hover img,
 .nav-element:hover p {
-  transition: var(--nav-transition);
+  transition: var(--transition);
 }
 
 .nav-element:not(:hover),
 .nav-element:not(:hover) img,
 .nav-element:not(:hover) p {
-  transition: var(--nav-transition);
+  transition: var(--transition);
 }
 
 /* Secondary nav buttons */
@@ -135,7 +137,7 @@ body {
 .main-container {
   display: grid;
   grid: 0.5fr 0.5fr 3fr / 1fr;
-  padding: 1rem 2rem;
+  padding: 0 2rem;
 }
 
 /* Overview container */
@@ -172,6 +174,10 @@ body {
   transform: rotate(-65deg);
 }
 
+.overview-container input[type="text"]:focus {
+  outline: 3px solid var(--clr-button-primary);
+}
+
 /* Utility and buttons container */
 .utility-container {
   display: grid;
@@ -187,6 +193,7 @@ body {
   border-radius: 25px;
   padding: 1.5rem;
   color: #fff;
+  box-shadow: var(--box-shadow-primary);
 }
 
 .total-project-container h3,
@@ -210,6 +217,16 @@ body {
   background-color: var(--clr-button-primary);
   font-family: var(--font-family-bold);
   font-size: 1rem;
+}
+
+.utility-container button:hover{
+  transform: scale(1.1);
+  transition: var(--btn-transition);
+  cursor: pointer;
+}
+
+.utility-container button:not(:hover){
+  transition: var(--transition);
 }
 
 /* Project container */
@@ -238,6 +255,20 @@ body {
   padding: 1.5rem;
   border-left: 10px solid var(--clr-project-primary);
   border-right: 10px solid var(--clr-project-primary);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.project:hover {
+  transition: var(--transition);
+  border-top: 10px solid var(--clr-primary);
+  border-bottom: 10px solid var(--clr-primary);
+  transform: translateY(-0.5rem);
+  cursor: pointer;
+}
+
+.project:not(:hover) {
+  transition: var(--transition);
 }
 
 .project h3 {
