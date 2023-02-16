@@ -83,7 +83,6 @@ body {
   align-items: center;
   gap: 0 1rem;
   padding-left: 2rem;
-  
 }
 
 .nav-element img {
@@ -179,6 +178,7 @@ body {
 }
 
 /* Utility and buttons container */
+
 .utility-container {
   display: grid;
   grid: 1fr / 2fr 1fr 1fr;
@@ -219,17 +219,18 @@ body {
   font-size: 1rem;
 }
 
-.utility-container button:hover{
+.utility-container button:hover {
   transform: scale(1.1);
   transition: var(--btn-transition);
   cursor: pointer;
 }
 
-.utility-container button:not(:hover){
+.utility-container button:not(:hover) {
   transition: var(--transition);
 }
 
 /* Project container */
+
 .project-container {
   display: grid;
   grid: 0.5fr 3fr / 1fr;
@@ -282,6 +283,7 @@ body {
 }
 
 /* Profile */
+
 .profile {
   display: grid;
   grid: 2fr 4fr 1fr / 1fr;
@@ -305,6 +307,8 @@ body {
   background-image: url(images/persona.jpg);
   background-size: cover;
 }
+
+/* Announcement section */
 
 .announcement-container h3 {
   text-align: center;
