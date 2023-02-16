@@ -324,6 +324,16 @@ body {
   padding: 1rem;
 }
 
+.announcement:hover {
+  transition: var(--transition);
+  transform: translateY(-0.5rem);
+  cursor: pointer;
+}
+
+.announcement:not(:hover) {
+  transition: var(--transition);
+}
+
 .announcement h4 {
   margin-bottom: 1rem;
   padding-top: 0.3rem;
